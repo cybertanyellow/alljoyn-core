@@ -18,7 +18,7 @@ import platform
 
 if platform.system() == 'Linux':
     default_target_os = 'linux'
-    allowed_target_oss = ('linux', 'android', 'openwrt')
+    allowed_target_oss = ('linux', 'android', 'openwrt', 'bbb')
 
     if platform.machine() == 'x86_64':
         default_target_cpu = 'x86_64'
@@ -156,6 +156,10 @@ elif env['OS'] == 'darwin':
 elif env['OS'] == 'openwrt':
     env['OS_GROUP'] = 'posix'
     env['OS_CONF'] = 'openwrt'
+
+elif env['OS'] == 'bbb':
+    env['OS_GROUP'] = 'posix'
+    env['OS_CONF'] = 'bbb'
 
 else:
     print 'Unsupported OS/CPU combination'

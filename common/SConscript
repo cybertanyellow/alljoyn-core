@@ -63,7 +63,7 @@ if env['OS_GROUP'] == 'windows':
         env.AppendUnique(LIBS = ['libeay32', 'ssleay32'])
         print 'Using OPENSSL crypto libraries'
 
-elif env['OS'] in ['linux', 'openwrt']:
+elif env['OS'] in ['linux', 'openwrt', 'bbb']:
     env.AppendUnique(LIBS =['rt', 'stdc++', 'pthread', 'crypto', 'ssl', 'm'])
 
 elif env['OS'] == 'darwin':
