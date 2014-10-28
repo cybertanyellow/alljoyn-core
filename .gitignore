@@ -1,28 +1,10 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#ignore files created by kdiff3 mergetool
+*.orig
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+whitespace.db
+.sconsign.dblite
+build/
+alljoyn_core/tags
+alljoyn_java/cscope.out
+alljoyn_java/sconsoutput
+alljoyn_java/tags
